@@ -1,21 +1,21 @@
 package domain;
 
 public class Toy {
-    private final String id;
+    private final int id;
     private final String name;
-    private Integer weight;
+    private final int frequency;
 
-    public Toy(String id, String name, Integer weight) {
+    public Toy(int id, String name, int frequency) {
         this.id = id;
         this.name = name;
-        this.weight = weight;
+        this.frequency = frequency;
     }
 
     public String toString() {
         return this.id + " " + this.name;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
@@ -23,11 +23,7 @@ public class Toy {
         return name;
     }
 
-    public Integer getWeight() {
-        return weight;
-    }
-
-    public void setWeight(Integer weight) {
-        this.weight = weight;
+    public int getFrequency() {
+        return frequency;
     }
 }
